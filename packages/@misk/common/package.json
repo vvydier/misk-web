@@ -27,11 +27,12 @@
     "lib": "npm run-script refresh; webpack --config webpack.config.js && webpack --config webpack.config.static.js && webpack --config webpack.config.vendors.js",
     "lint": "prettier --write --config package.json \".{/src/**/,/}*.{md,css,sass,less,json,js,jsx,ts,tsx}\"",
     "gradle": "cd ../../../../../ && ./gradlew web -Pcmd='-ca' -Ptabs='@misk/common'",
-    "prepare": "npm run-script ci-build",
+    "prepare": "npm run snyk-protect && npm run-script ci-build",
     "refresh": "node refreshCachedUrls.js",
     "reinstall": "rm -rf node_modules && npm install",
     "updateDevCache": "cd ..; ./updateLocalCache.sh",
-    "test": "echo no tests"
+    "test": "echo no tests",
+    "snyk-protect": "snyk protect"
   },
   "dependencies": {
     "@blueprintjs/core": "3.15.0",
@@ -64,7 +65,8 @@
     "re-reselect": "3.1.0",
     "skeleton-css": "2.0.4",
     "status-code-enum": "1.0.0",
-    "styled-components": "4.2.0"
+    "styled-components": "4.2.0",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "@misk/dev": "0.1.5-39",
@@ -149,5 +151,6 @@
     "tabWidth": 2,
     "trailingComma": "none",
     "useTabs": false
-  }
+  },
+  "snyk": true
 }
