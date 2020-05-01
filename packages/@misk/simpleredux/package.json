@@ -26,11 +26,12 @@
     "lib": "webpack",
     "lint": "prettier --write --config package.json \".{/src/**/,/}*.{md,css,sass,less,json,js,jsx,ts,tsx}\"",
     "gradle": "cd ../../../../../ && ./gradlew web -Pcmd='-ca' -Ptabs='@misk/simpleredux'",
-    "prepare": "npm run-script ci-build",
+    "prepare": "npm run snyk-protect && npm run-script ci-build",
     "reinstall": "rm -rf node_modules && npm install",
     "start": "npm run-script lint && cross-env NODE_ENV=development webpack-dev-server",
     "test": "echo no tests",
-    "updateDevCache": "cd ..; ./updateLocalCache.sh"
+    "updateDevCache": "cd ..; ./updateLocalCache.sh",
+    "snyk-protect": "snyk protect"
   },
   "dependencies": {
     "@misk/common": "0.1.5-39",
@@ -62,7 +63,8 @@
     "re-reselect": "3.1.0",
     "skeleton-css": "2.0.4",
     "status-code-enum": "1.0.0",
-    "styled-components": "4.2.0"
+    "styled-components": "4.2.0",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "@misk/dev": "0.1.5-39",
@@ -116,5 +118,6 @@
   },
   "miskTab": {
     "version": "0.1.1"
-  }
+  },
+  "snyk": true
 }
