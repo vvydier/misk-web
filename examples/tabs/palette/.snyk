@@ -1,0 +1,52 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.14.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-567746:
+    - '@misk/core > lodash':
+        patched: '2020-05-01T01:00:30.218Z'
+    - '@misk/core > @misk/simpleredux > lodash':
+        patched: '2020-05-01T01:00:30.218Z'
+    - '@misk/core > @misk/simpleredux > @misk/common > lodash':
+        patched: '2020-05-01T01:00:30.218Z'
+    - react-hot-loader > lodash:
+        patched: '2020-05-01T01:00:30.218Z'
+    - '@misk/core > react-hot-loader > lodash':
+        patched: '2020-05-01T01:00:30.218Z'
+    - styled-components > babel-plugin-styled-components > lodash:
+        patched: '2020-05-01T01:00:30.218Z'
+    - styled-components > @babel/helper-module-imports > @babel/types > lodash:
+        patched: '2020-05-01T01:00:30.218Z'
+    - '@misk/core > @misk/simpleredux > react-hot-loader > lodash':
+        patched: '2020-05-01T01:00:30.218Z'
+    - '@misk/simpleredux > styled-components > babel-plugin-styled-components > lodash':
+        patched: '2020-05-01T01:00:30.218Z'
+    - styled-components > babel-plugin-styled-components > @babel/helper-annotate-as-pure > @babel/types > lodash:
+        patched: '2020-05-01T01:00:30.218Z'
+    - '@misk/simpleredux > styled-components > @babel/helper-module-imports > @babel/types > lodash':
+        patched: '2020-05-01T01:00:30.218Z'
+    - '@misk/core > @misk/simpleredux > @misk/common > react-hot-loader > lodash':
+        patched: '2020-05-01T01:00:30.218Z'
+    - '@misk/core > @misk/simpleredux > styled-components > babel-plugin-styled-components > lodash':
+        patched: '2020-05-01T01:00:30.218Z'
+    - '@misk/core > @emotion/styled > babel-plugin-emotion > @babel/helper-module-imports > @babel/types > lodash':
+        patched: '2020-05-01T01:00:30.218Z'
+    - '@misk/simpleredux > styled-components > babel-plugin-styled-components > @babel/helper-annotate-as-pure > @babel/types > lodash':
+        patched: '2020-05-01T01:00:30.218Z'
+    - '@misk/core > @misk/simpleredux > styled-components > @babel/helper-module-imports > @babel/types > lodash':
+        patched: '2020-05-01T01:00:30.218Z'
+    - '@misk/core > @misk/simpleredux > @misk/common > styled-components > babel-plugin-styled-components > lodash':
+        patched: '2020-05-01T01:00:30.218Z'
+    - '@misk/core > @misk/common > @emotion/styled > babel-plugin-emotion > @babel/helper-module-imports > @babel/types > lodash':
+        patched: '2020-05-01T01:00:30.218Z'
+    - '@misk/core > @misk/simpleredux > styled-components > babel-plugin-styled-components > @babel/helper-annotate-as-pure > @babel/types > lodash':
+        patched: '2020-05-01T01:00:30.218Z'
+    - '@misk/core > @misk/simpleredux > @misk/common > styled-components > @babel/helper-module-imports > @babel/types > lodash':
+        patched: '2020-05-01T01:00:30.218Z'
+    - '@misk/core > @misk/simpleredux > @misk/common > @emotion/styled > babel-plugin-emotion > @babel/helper-module-imports > @babel/types > lodash':
+        patched: '2020-05-01T01:00:30.218Z'
+    - '@misk/core > @misk/simpleredux > @misk/common > styled-components > babel-plugin-styled-components > @babel/helper-annotate-as-pure > @babel/types > lodash':
+        patched: '2020-05-01T01:00:30.218Z'
+    - '@misk/core > @misk/simpleredux > @misk/common > @emotion/core > @emotion/css > babel-plugin-emotion > @babel/helper-module-imports > @babel/types > lodash':
+        patched: '2020-05-01T01:00:30.218Z'
