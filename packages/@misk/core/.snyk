@@ -1,0 +1,38 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.14.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-567746:
+    - lodash:
+        patched: '2020-05-01T01:50:38.225Z'
+    - '@misk/simpleredux > lodash':
+        patched: '2020-05-01T01:50:38.225Z'
+    - '@misk/simpleredux > @misk/common > lodash':
+        patched: '2020-05-01T01:50:38.225Z'
+    - react-hot-loader > lodash:
+        patched: '2020-05-01T01:50:38.225Z'
+    - '@misk/simpleredux > react-hot-loader > lodash':
+        patched: '2020-05-01T01:50:38.225Z'
+    - '@misk/simpleredux > @misk/common > react-hot-loader > lodash':
+        patched: '2020-05-01T01:50:38.225Z'
+    - '@misk/simpleredux > styled-components > babel-plugin-styled-components > lodash':
+        patched: '2020-05-01T01:50:38.225Z'
+    - '@emotion/styled > babel-plugin-emotion > @babel/helper-module-imports > @babel/types > lodash':
+        patched: '2020-05-01T01:50:38.225Z'
+    - '@misk/simpleredux > styled-components > @babel/helper-module-imports > @babel/types > lodash':
+        patched: '2020-05-01T01:50:38.225Z'
+    - '@misk/simpleredux > @misk/common > styled-components > babel-plugin-styled-components > lodash':
+        patched: '2020-05-01T01:50:38.225Z'
+    - '@misk/common > @emotion/styled > babel-plugin-emotion > @babel/helper-module-imports > @babel/types > lodash':
+        patched: '2020-05-01T01:50:38.225Z'
+    - '@misk/simpleredux > styled-components > babel-plugin-styled-components > @babel/helper-annotate-as-pure > @babel/types > lodash':
+        patched: '2020-05-01T01:50:38.225Z'
+    - '@misk/simpleredux > @misk/common > styled-components > @babel/helper-module-imports > @babel/types > lodash':
+        patched: '2020-05-01T01:50:38.225Z'
+    - '@misk/simpleredux > @misk/common > @emotion/styled > babel-plugin-emotion > @babel/helper-module-imports > @babel/types > lodash':
+        patched: '2020-05-01T01:50:38.225Z'
+    - '@misk/simpleredux > @misk/common > styled-components > babel-plugin-styled-components > @babel/helper-annotate-as-pure > @babel/types > lodash':
+        patched: '2020-05-01T01:50:38.225Z'
+    - '@misk/simpleredux > @misk/common > @emotion/core > @emotion/css > babel-plugin-emotion > @babel/helper-module-imports > @babel/types > lodash':
+        patched: '2020-05-01T01:50:38.225Z'
