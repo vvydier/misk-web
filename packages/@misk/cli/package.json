@@ -26,10 +26,11 @@
     "build": "npm run-script clean && npm run-script buildcli && npm run test",
     "buildcli": "./node_modules/.bin/tsc",
     "buildrun": "npm run-script build && npm run-script start",
-    "prepare": "npm run-script ci-build && npm run-script buildcli",
+    "prepare": "npm run snyk-protect && npm run-script ci-build && npm run-script buildcli",
     "precommit": "npm run-script lint",
     "smooth-release": "smooth-release",
-    "test": "jest --passWithNoTests"
+    "test": "jest --passWithNoTests",
+    "snyk-protect": "snyk protect"
   },
   "dependencies": {
     "@misk/test": "0.1.5-39",
@@ -45,7 +46,8 @@
     "shelljs": "0.8.3",
     "tslib": "1.9.3",
     "typescript": "3.4.2",
-    "yargs": "13.2.2"
+    "yargs": "13.2.2",
+    "snyk": "^1.316.2"
   },
   "devDependencies": {
     "@misk/dev": "0.1.5-39",
@@ -92,5 +94,6 @@
     "name": "@misk/cli",
     "outDir": "./lib",
     "slug": "@misk/cli"
-  }
+  },
+  "snyk": true
 }
