@@ -33,7 +33,7 @@
   },
   "dependencies": {
     "@misk/test": "0.1.5-39",
-    "axios": "0.18.0",
+    "axios": "0.21.1",
     "dayjs": "1.8.12",
     "fs-extra": "7.0.1",
     "klaw": "3.0.0",
