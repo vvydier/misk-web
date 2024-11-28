@@ -35,8 +35,8 @@
   },
   "dependencies": {
     "@misk/prettier": "0.3.3",
-    "@misk/test": "0.3.3",
-    "axios": "0.21.4",
+    "@misk/test": "0.5.0",
+    "axios": "1.7.8",
     "dayjs": "1.10.7",
     "fs-extra": "9.1.0",
     "klaw": "4.0.1",
